@@ -14,21 +14,6 @@
 - Lombok（簡化 Java 程式碼）
 - Git + GitHub（版本控制）
 
-## 專案結構
-
-seatmanagement/
-├── src/
-│ ├── main/
-│ │ ├── java/com/example/seatmanagement/
-│ │ │ ├── controller/ # REST API 控制器
-│ │ │ ├── service/ # 商業邏輯層
-│ │ │ ├── repository/ # 資料存取層（JPA Repository）
-│ │ │ └── entity/ # JPA Entity 類別
-│ └── resources/
-│ └── application.yml # 資料庫與環境設定
-├── pom.xml # Maven 專案設定檔
-└── README.md # 說明文件
-
 1. 下載專案後，先安裝 Maven 相依套件：
 
 ```bash
@@ -50,3 +35,17 @@ mvn spring-boot:run
 
 4.預設 API 路徑為：
 http://localhost:8080/api/seats
+## 專案結構
+
+seatmanagement/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/seatmanagement/
+│ │ │ ├── controller/ # REST API 控制器
+│ │ │ ├── service/ # 商業邏輯層
+│ │ │ ├── repository/ # 資料存取層（JPA Repository）
+│ │ │ └── entity/ # JPA Entity 類別
+│ └── resources/
+│ └── application.yml # 資料庫與環境設定
+├── pom.xml # Maven 專案設定檔
+└── README.md # 說明文件
